@@ -27,8 +27,7 @@ body{
 /*global*/
 
 .contenedor{
-    width: 90%;
-    max-width: 120rem;
+    width: min(90%,120rem);
     margin: 0 auto;
 }
 
@@ -219,4 +218,16 @@ img {
     background-color: var(--negro);
     padding-bottom: 3rem ;
     margin-top: 4rem;
+}
+
+/*sobre nosotros*/
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: 50%;
+    }
 }

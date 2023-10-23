@@ -57,8 +57,14 @@ h4{
     font-size: 2.8rem;
 }
 
-img{
+img {
     max-width: 100%;
+    border-radius: .5rem;
+    box-shadow: 3.4px 3.4px 2.7px rgba(0, 0, 0, 0.05),
+        8.7px 8.7px 6.9px rgba(0, 0, 0, 0.071),
+        17.7px 17.7px 14.2px rgba(0, 0, 0, 0.089),
+        36.5px 36.5px 29.2px rgba(0, 0, 0, 0.11),
+        100px 100px 80px rgba(0, 0, 0, 0.16);
 }
 
 /*utilidades*/
@@ -164,6 +170,7 @@ img{
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 2rem;
+    border-radius: .5rem;
 }
 
 @media (min-width: 768px) {

@@ -224,10 +224,10 @@ img {
 @media (min-width: 768px) {
     .sobre-nosotros{
         display: flex;
-        gap: 2rem;
+        justify-content: space-between;
     }
     .sobre-nosotros__imagen,
     .sobre-nosotros__texto{
-        flex-basis: 50%;
+        flex-basis: calc(50% - 1rem);
     }
 }

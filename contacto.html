@@ -33,22 +33,29 @@
 
 
    <main class="contenedor">
-    <h3 class="centrar-texto">Sobre Nosotros</h3>
-    <div class="sobre-nosotros">
-        <div class="sobre-nosotros__imagen">
-            <img src="img/tazacafe.jpg" alt="imagen nosotros">
+    <h3 class="centrar-texto">Contacto</h3>
+    <div class="contacto-bg"></div>
+    <form class="formulario">
+        <div class="campo">
+            <label class="campo__label" for="nombre">Nombre</label>
+            <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
         </div>
-        <div class="sobre-nosotros__texto">
-            <p>"¡Bienvenidos a nuestro apasionante rincón del café! En nuestro blog, te sumergirás en el fascinante mundo de
-                esta bebida aromática que ha cautivado corazones y desatado conversaciones durante siglos. Ofrecemos una
-                experiencia única donde podrás explorar la historia y el arte detrás de cada taza de café, descubrir recetas
-                exquisitas que harán que tus sentidos se despierten y sumergirte en cursos y formaciones impartidas por expertos
-                apasionados. Desde los orígenes del café en las montañas de Etiopía hasta las tendencias más modernas en tostado
-                y preparación, nuestro blog es tu fuente definitiva de conocimiento cafetero. Únete a nosotros mientras
-                exploramos la magia que se encuentra en cada grano y en cada sorbo."</p>
-        
+
+        <div class="campo">
+            <label class="campo__label"  for="email">Nombre</label>
+            <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
         </div>
-    </div>
+
+        <div class="campo">
+            <label class="campo__label"  for="mensaje">Mensaje</label>
+            <textarea class="campo__field campo__field--textarea" name="" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="campo">
+            <input type="submit" value="Enviar" class="boton boton--primario">
+        </div>
+    </form>
+
    </main>
                    
 

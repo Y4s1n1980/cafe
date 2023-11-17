@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0099ff">
     <title>BlogCafé</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,700;1,400&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!--preload-->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,700;1,400&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="img/cafelibro.jpg" as="image">
+
+
 </head>
 <body>
    <header class="header">
@@ -36,7 +52,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/cafelibro.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/cafelibro.webp" type="image/webp">
+                        <img loading="lazy" src="img/cafelibro.jpg" alt="imagen blog">
+                    </picture>   
                 </div>
 
                 <div class="entrada__contenido">
@@ -52,7 +71,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/cafemesa.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/cafemesa.webp" type="image/webp">
+                        <img loading="lazy" src="img/cafemesa.jpg" alt="imagen blog">
+                    </picture> 
                 </div>
 
                 <div class="entrada__contenido">
@@ -68,7 +90,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/cafe1.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/cafe1.webp" type="image/webp">
+                        <img loading="lazy" src="img/cafe1.jpg" alt="imagen blog">
+                    </picture> 
                 </div>
 
                 <div class="entrada__contenido">

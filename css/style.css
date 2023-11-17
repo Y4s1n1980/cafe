@@ -170,12 +170,17 @@ img {
     font-weight: 700;
     margin-bottom: 2rem;
     border-radius: .5rem;
+    border:none
 }
 
 @media (min-width: 768px) {
    .boton{
       display: inline-block;
    } 
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton--primario{
@@ -223,11 +228,84 @@ img {
 /*sobre nosotros*/
 @media (min-width: 768px) {
     .sobre-nosotros{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
     }
-    .sobre-nosotros__imagen,
-    .sobre-nosotros__texto{
-        flex-basis: calc(50% - 1rem);
+}
+
+
+/* cursos*/
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem ;
     }
+
+}
+
+.curso:last-of-type{
+    border: none;
+}
+
+.curso__label{
+    font-family: var(--fuenteHead);
+    font-weight: bold;
+}
+
+.curso__info{
+    font-weight: normal;
+}
+
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
+
+/* contacto*/
+
+.contacto-bg{
+    background-image: url(../img/cafeportatil.jpg) ;
+    height: 100rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0;
+    width: 95%;
+    padding: 5rem;
+
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+
+.campo__label{
+    flex:  0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--negro);
+}
+
+.campo__field--textarea{
+  
+    height: 20rem;
+
 }
